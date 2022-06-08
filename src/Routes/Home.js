@@ -19,8 +19,8 @@ export default function Home() {
 
 
   return (
-    <div style={{ backgroundColor: 'cyan'}}>
-      <h1>Home</h1>
+    <div>
+      <h1 style={{margin: 0}}>Home</h1>
       {userList.map(user => {
         return (
           <Card sx={{ margin: '15px'}}>

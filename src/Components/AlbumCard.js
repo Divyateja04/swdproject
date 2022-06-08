@@ -23,8 +23,8 @@ export default function OutlinedCardA(props) {
 
     const card = (
         <React.Fragment>
-          <ImageList sx={{ width: 500, height: 500, margin: 10 }} cols={3} rowHeight={164}>
-            {photos.splice(9)}
+          <ImageList sx={{ width: 500, height: 175, margin: 1 }} cols={3} rowHeight={164}>
+            {photos.splice(3)}
             {photos.map((item) => (
               <ImageListItem key={item.img}>
                 <img
@@ -43,8 +43,8 @@ export default function OutlinedCardA(props) {
       );
 
     return (
-        <Box sx={{ minWidth: 275 }}>
-            <Card variant="outlined">{card}</Card>
+        <Box sx={{ minWidth: 275 }} style={{padding: 10, alignSelf: 'center'}}>
+            <Card variant="outlined" style={{alignSelf: 'center'}}>{card}</Card>
         </Box>
     );
 }

@@ -38,7 +38,7 @@ export default function Home() {
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 0,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -58,11 +58,13 @@ export default function Home() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            padding: 2,
           }}
         >
           <Grid container spacing={2}>
             <Grid item xs={6} md={6}>
-              <h3>Posts</h3>
+              <h2>Posts</h2>
+              <hr/>
               {posts.map(post => {
                 return (
                   <OutlinedCard key={post.id} comment={post.title} id={post.id} />
@@ -70,7 +72,8 @@ export default function Home() {
               })}
             </Grid>
             <Grid item xs={6} md={6}>
-              <h3>Albums</h3>
+              <h2>Albums</h2>
+              <hr/>
               {albums.map(album => {
                 return (
                   <OutlinedCardA key={album.id} comment={album.title} id={album.id} />

@@ -1,4 +1,6 @@
 .App {
   text-align: center;
-  /* background-color: #61dafb; */
-}
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  color: #c7c1c1;
+} 
