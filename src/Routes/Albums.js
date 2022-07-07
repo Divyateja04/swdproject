@@ -33,7 +33,7 @@ export default function Albums(props) {
             ))}
           </ImageList>
           <CardActions sx={{alignItems: 'middle'}}>
-            <Link to={`/1`}><Button size="large" variant='text'>Go to home</Button></Link>
+            <Link to={`/`}><Button size="large" variant='text'>Go to home</Button></Link>
           </CardActions>
         </React.Fragment>
       );
