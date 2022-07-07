@@ -7,6 +7,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { useParams } from 'react-router-dom';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import { Box } from '@mui/system';
 
 export default function Home() {
   const postID = (useParams().postID);
@@ -26,7 +27,7 @@ export default function Home() {
       {
         comments.map(comment => {
           return (
-            <div>
+            <Box sx={{border: 1, margin: 1}}>
               <h4>{comment.body}</h4>
               <TimelineItem>
                 <TimelineOppositeContent>
@@ -38,7 +39,7 @@ export default function Home() {
                 </TimelineSeparator>
                 <TimelineContent>{comment.email}</TimelineContent>
               </TimelineItem>
-            </div>
+            </Box>
             );
           }
         )
