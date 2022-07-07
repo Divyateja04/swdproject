@@ -39,8 +39,11 @@ export default function Albums(props) {
       );
 
     return (
-        <Box sx={{ minWidth: 275 }} style={{padding: 10, alignSelf: 'center'}}>
-            <Card variant="outlined" style={{alignSelf: 'center'}}>{card}</Card>
-        </Box>
+        <div>
+            <h1>Album</h1>
+            <Box sx={{ minWidth: 275 }} style={{padding: 10, alignSelf: 'center'}}>
+                <Card variant="outlined" style={{alignSelf: 'center'}}>{card}</Card>
+            </Box>
+        </div>
     );
 }
