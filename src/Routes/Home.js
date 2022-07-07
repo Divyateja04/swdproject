@@ -55,6 +55,7 @@ export default function Home() {
           </Card>
         )
       })}
+      <Link to={`/about`}><Button size="small" variant="contained">Know More about me</Button></Link>
     </div>
   )
 }
